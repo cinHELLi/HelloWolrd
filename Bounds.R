@@ -1,4 +1,9 @@
-m11.max.new <- function(n1,M,deg_seq){ #deg_seq deve essere ordinata dal più grande al più piccolo
+#n1 is the numbero of nodes with c_i=1
+#N is the number of network nodes
+#M is the number of links of the network
+#deg_seq is the vector of node degree arranged in non-increasing order
+
+m11.max.new <- function(n1,M,deg_seq){ 
   ds1 <- deg_seq[1:n1]
   ds1[ds1 > (n1-1)] <- n1-1 
   min(M,choose(n1,2),ceiling(sum(ds1)/2))
@@ -13,7 +18,7 @@ m10.max.new <- function(n1,N,M,deg_seq){
 
 m11.min.new <- function(n1,N,M,deg_seq){
   if(n1!=N){
-    max(0,floor((sum(deg_seq[N:(N-n1+1)])-sum(deg_seq[1:(N-n1)]))/2))#il +1 è per la vettorizzazione
+    max(0,floor((sum(deg_seq[N:(N-n1+1)])-sum(deg_seq[1:(N-n1)]))/2))#il +1 Ã¨ per la vettorizzazione
   }else(M)
 }
 
