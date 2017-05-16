@@ -1,4 +1,6 @@
-#n1 is the numbero of nodes with c_i=1
+#The code refers to Cinelli et al., Structural bounds on the dyadic effect. Journal of Complex Networks (2017)
+
+#n1 is the number of nodes with c_i=1
 #N is the number of network nodes
 #M is the number of links of the network
 #deg_seq is the vector of node degree arranged in non-increasing order
