@@ -1,4 +1,6 @@
-#This function return a matrix containing all the possible binary vectors
+#The code refers to Cinelli et al., Structural bounds on the dyadic effect. Journal of Complex Networks (2017)
+
+#This function returns a matrix containing all the possible binary vectors
 #the number of rows is N
 #the number of colums is choose(N,n1) 
 
